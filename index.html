@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.1/css/bulma.min.css" integrity="sha512-dF4b2QV/0kq+qlwefqCyb+edbWZ63ihXhE4A2Pju3u4QyaeFzMChqincJsKYwghbclpLE92jPb9yaz/LQ8aNlg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <title>Location Finder</title>
+</head>
+<body>
+    <section class="hero hero-body is-dark container">
+        <h1 class="title">US Location Info</h1>
+        <h2 class="subtitle">Enter a zipcode to get the location info</h2> 
+        <form id="zipForm">
+          <div class="field">
+            <div class="control has-icons-left has-icons-right">
+              <input class="input zip is-large" type="text" placeholder="Enter Zipcode">
+              <span class="icon is-small is-left">
+                  <i class="fa fa-map-pin"></i>
+                </span>
+              <span class="icon is-small is-right icon-check">
+                  <i class="fa fa-check"></i>
+                </span>
+              <span class="icon is-small is-right icon-remove">
+                  <i class="fa fa-remove"></i>
+                </span>
+            </div>
+          </div>
+        </form>
+      </section>
+      
+      <br>
+      <div class="container">
+        <div id="output"></div>
+      </div>
+      <script src="main.js"></script>
+</body>
+</html>
